@@ -1,0 +1,22 @@
+1, 3, 5, 7
+
+I have limited time in lab, so I just ran through the codes by hand.  
+
+It seemed to me that they all look fine, though they forgot to decrease the 
+eventCount after they cancelled an event -- number 5 did poorly on cancel 
+function.
+
+Both number 1 and number 3 included a helper function to expand the array.  
+
+I prefer the way number 3 did it -- clearer and more concise, 
+which I think is important in terms of readability.
+
+I want to say that this lab accurately addressed the pain of debugging.
+The incredible quantity of bugs in my code are always the result of 
+procrastination, which can seriously hurt myself as a sober, active college
+student.  Therefore, I must stop procrastinating and start my hw3 -- which is 
+due tomorrow.
+
+I do not want to waste my talent, and I have to catch up fast.  I know I will.
+
+Watch me.

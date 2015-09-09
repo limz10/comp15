@@ -1,0 +1,14 @@
+Comp 15 HW1
+Mingzhe Li
+Jan 16, 2014
+
+This program creates two rectangles and reports their areas, perimeters, 
+and whether square or not.
+
+Files include rectangle.h rectangle.cpp rectangleTester.cpp
+
+Use included Makefile to compile it
+
+Data structure and algorithm for this program are simple.  I decided not to 
+waste my time explaining, but you get the idea that I am aware of the
+importance of this readme file and it will absolutely benefit me eventually.

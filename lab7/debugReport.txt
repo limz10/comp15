@@ -1,0 +1,10 @@
+Student 4 Dynamic Array
+
+Bug 1:  In the cancelEvent function, the student forgot to decrease
+	eventCount by 1 every time a event being cancelled
+
+How to fix that: eventCount--;
+
+Bug 2: 
+
+How to fix that: 

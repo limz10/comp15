@@ -1,0 +1,59 @@
+Your design document goes here.
+
+I plan to use dynamic arrays, or vectors (I suppose data-structure-wise they
+are the same), to store the lyrics. So each song will be stored in a struct
+probably like this:
+
+struct Song {
+    string artist;
+    string title;
+    vector<string> lyrics;
+}
+
+Also, since vectors can store pointers, which makes it much easier to keep
+track of which songs contain a particular word, like this:
+
+    vector<Song*> songs;
+
+and to add a song to the list:
+    
+    Song *aSong;
+    songs.push_back(aSong);
+
+Then we must sort the list by the frequency of the particular word, a
+simple struct like this might be a good idea:
+
+struct songWithFreq {
+    Song *song;
+    int frequency;
+}
+
+Again, vectors are very useful here, because it stores any type of data:
+
+    vector<songWithFreq> songsWithFreq;  
+
+Now we can begin sorting, before calling the prepared quicksort function,
+we must overload the operator to enable sorting the structs:
+
+bool operator<(const songWithFreq &lhs, const songWithFreq &rhs) {
+        if (lhs.frequency < rhs.frequency) return true;
+}
+return false;
+
+We are good to go:
+
+  sort(songsWithFreq.begin(),songsWithFreq.end());
+
+Sorry I forgot to include hashing table before... Without a question
+I go with hash for its high efficiency; we have to go through a huge amount
+of data this time so it is quite important that we pick the right way to go.
+I will use the hash function for strings provided,
+
+I have talked to my lab TA, Jim Mao, and he conveyed affirmation. 
+It is just a very high level design at this point, I believe I will work out
+the low level details in my code soon.
+
+
+Signed off by: (TA / Chris / Bruce)
+
+
